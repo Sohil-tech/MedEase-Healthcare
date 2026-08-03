@@ -1,0 +1,364 @@
+body{
+  font-family: "Inter", sans-serif;
+}
+
+
+
+
+/************ colores ***********/
+
+$primary:       #2F80ED;
+$secondary:     #F2F7FF !important;
+
+
+.navy-blue{
+  background-color: #F2F7FF;
+}
+
+
+.gray-100{
+  background-color: #F7F7F7;
+}
+
+.gray-200{
+  background-color: #E6E6E6;
+}
+
+
+.gray-300{
+  background-color: #F5F5F5;
+}
+
+
+
+/*********** Heading size *********/
+
+$font-size-base:               1rem;   
+$h1-font-size:                $font-size-base * 5 ;       /***** 80px *****/
+$h2-font-size:                $font-size-base * 3.75 ;    /***** 60px *****/
+$h3-font-size:                $font-size-base * 3 ;       /***** 48px *****/
+$h4-font-size:                $font-size-base * 2 ;       /***** 32px *****/
+$h5-font-size:                $font-size-base * 1.25 ;    /***** 20px *****/
+$h6-font-size:                $font-size-base ;
+
+
+$display-font-sizes: (
+  1:2.5rem,                 /***** 40px *****/   
+  5:1.5rem,                 /***** 24px *****/ 
+  6: 1.125rem               /***** 18px *****/
+) ;
+
+
+/************ padding size  ****************/
+
+.paddi{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.image-hight-white{
+  width: 25px;
+  height: 25px;
+}
+
+
+/******* display width *******/
+
+$container-max-widths: (
+  xl: 1209px,
+);
+
+
+/******** line decoretion **********/
+
+$link-decoration:                         none;
+
+
+
+
+/********** custom btn*********/
+
+.custom-btn{
+    background-color: white;
+    color: #2F80ED;
+    border: 1px solid #2F80ED;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.custom-btn:hover{
+    background-color: #2F80ED;
+    color: white;
+    // border-color: #2F80ED;
+}
+
+
+.card-img-size{
+  width: 60px;
+  height: 50px;
+
+}
+
+
+.custom-line-hight{
+  line-height: 100px;
+}
+
+.custom-lightleft{
+  color: #0d6efd;
+  background-color: #CCCCCC;
+}
+.custom-lightleft:hover{
+  background-color: #0d6efd;
+  color: white;
+}
+
+
+/************ carousal control   **********/
+
+$carousel-control-color:             #2F80ED;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     1;
+$carousel-indicator-active-bg:       #2F80ED;
+$carousel-control-width:             15%;
+
+
+
+
+
+/******* practice ***********/
+
+.carousel-control-prev,
+.carousel-control-next{
+    width:50px;
+    height:50px;
+    background:#0d6efd;
+    border-radius:50%;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:1;
+}
+
+.carousel-control-prev{
+    left:20px;
+}
+
+.carousel-control-next{
+    right:20px;
+}
+
+.carousel-indicators{
+    bottom:-40px;
+}
+
+.carousel-indicators button{
+    width:10px !important;
+    height:10px !important;
+    border-radius:50%;
+}
+
+
+
+
+
+/*******  carousel 01 ******/
+
+
+#doctorSlider{
+    padding-bottom:70px;
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  position: absolute;
+    width:45px;
+    height:45px;
+    top:auto !important;
+    bottom: 0px !important;
+    opacity:1;
+  
+}
+
+.carousel-control-prev{
+    left:20px;
+}
+
+.carousel-control-next{
+    right:20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color:#3b82f6;
+    background-size:18px;
+}
+
+.carousel-indicators{
+    bottom:12px;
+    margin-bottom:0;
+}
+
+.carousel-indicators button{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#d6d6d6;
+    border:0;
+}
+
+.carousel-indicators .active{
+    background:#3b82f6;
+}
+
+/***************** carousal 02 ************/
+
+
+#doctorSlider02{
+    padding-bottom:70px;
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  position: absolute;
+    width:45px;
+    height:45px;
+    top:auto !important;
+    bottom: 0px !important;
+    opacity:1;
+  
+}
+
+.carousel-control-prev{
+    left:20px;
+}
+
+.carousel-control-next{
+    right:20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color: blue;
+    background-size:18px;
+}
+
+.carousel-indicators{
+    bottom: 12px;
+    margin-bottom:0;
+}
+
+.carousel-indicators button{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#d6d6d6;
+    border:0;
+}
+
+.carousel-indicators .active{
+    background: blue;
+}
+
+
+
+/****************** carousal 03 *********************/
+
+
+#doctorSlider03{
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  position: absolute;
+    width:45px;
+    height:45px;
+    top:auto !important;
+    bottom: 0px !important;
+    opacity:1;
+  
+}
+
+.carousel-control-prev{
+    left:20px;
+}
+
+.carousel-control-next{
+    right:20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color: blue;
+    background-size:18px;
+}
+
+.carousel-indicators{
+    bottom: 12px;
+    margin-bottom:0;
+}
+
+.carousel-indicators button{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#d6d6d6;
+    border:0;
+}
+
+.carousel-indicators .active{
+    background: blue;
+}
+
+
+
+/*************** background image *******************/
+
+.banner{
+  background: url("../assets/images/doctor_lady.jpg");
+  height: 500px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45); /* Black effect */
+}
+
+.banner-content{
+    position:relative;
+    z-index:1;
+}
+
+
+
+
+/*************** swiper js ****************/
+
+

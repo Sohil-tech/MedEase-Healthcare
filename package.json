@@ -1,0 +1,29 @@
+{
+  "name": "medease-healthcare",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sohil-tech/MedEase-Healthcare#readme",
+  "bugs": {
+    "url": "https://github.com/Sohil-tech/MedEase-Healthcare/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sohil-tech/MedEase-Healthcare.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0",
+    "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "swiper": "^14.0.7"
+  }
+}

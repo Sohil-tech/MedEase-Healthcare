@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEase-Healthcare</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-xl">
+                    <div class="navbar-brand d-flex">
+                        <img class="pe-3" src="./assets/icons/Stethoscope.png" alt="Doctor Sthethoscope">
+                        <a class="nav-link text-primary fs-4" href="#">MedEase</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary fs-5 active " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="../indixpert.com">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5" href="#">Find a Doctor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5">About Us</a>
+                            </li>
+                        </ul>
+                        <button type="button"
+                            class="btn btn-primary d-lg-none rounded-5 px-5 bx-3 py-2 text-white">Register</button>
+                    </div>
+                    <button type="button"
+                        class="btn btn-primary d-none d-lg-block rounded-5 px-5 bx-3 py-2 text-white">Register</button>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container-xl">
+                <div class="row mb-5 pb-4 justify-content-between">
+                    <div class="col-lg-7 pt-5 mt-4">
+                        <div class="d-flex align-items-center mt- rounded-5 navy-blue">
+                            <img class="text-end ps-4 py-2 my-1" src="./assets/icons/Star.png" alt="Star icon">
+                            <h5 class="text-primary pt-2 pe-4 ps-3 ">Rated #1 choice for healthcare appointments by
+                                users</h5>
+                        </div>
+                        <h1 class="h lh-base pt-4 mt-3">Connecting You <i class=" text-primary">to</i> Better Health</h1>
+                        <p class="display-5 lh-lg">We're here to link you directly to improved health outcomes,
+                            effortlessly connecting you with the care you need.</p>
+
+                        <div class="mt-5 pt-4 gap-3">
+                            <button type="button" class="btn btn-outline-primary me-4 rounded-5 px-5 py-3 mb-2 mb-md">Book
+                                Consultation</button>
+                            <button type="button" class="btn btn-outline-primary rounded-5 px-5 py-3 ">Learn More <i
+                                    class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 pt-5 mt-4 position-relative">
+                        <div class="ps ms-2 pe-5 me-2 overflow-hidden">
+                            <img class="rounded-5  object-fit-cover"
+                                src="./assets/images/pexels-karolina-grabowska-7195432 1.png" alt="Lady Doctor work">
+                        </div>
+                        <div class="bg-white d-flex align-items-center w-50 rounded-4 position-absolute top-0 end-0">
+                            <h3 class="py-3 ps-3 pe-2 text-primary fw-semibold">10K+</h3>
+                            <p class="display-6 mx-2 fw-normal text-black text-center lh-3">Hours Of Patient Meetings
+                            </p>
+                        </div>
+                        <div class="w-50 rounded-4 bg-white position-absolute bottom-0 start-0">
+                            <h3 class="display-1 fw-semibold text-end text-primary">2.650+</h3>
+                            <p class="pt-3 text-center display-6 fw-medium">patients have trusted us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xl paddi">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-8">
+                        <h3>Choose Doctor's<i class="text-primary"> Expertise</i></h3>
+                    </div>
+                    <div class="col-1 display-5 fw-medium d-flex align-items-center">
+                        <a href="#">See all</a>
+                    </div>
+                </div>
+                  <div id="doctorSlider" class="carousel slide">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#doctorSlider"
+                        data-bs-slide="prev">
+                        <i class="bi bi-arrow-left gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                    </button>
+                    <!-- Dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#doctorSlider" data-bs-slide-to="0"
+                            class="active"></button>
+
+                        <button type="button" data-bs-target="#doctorSlider" data-bs-slide-to="1"></button>
+
+                        <button type="button" data-bs-target="#doctorSlider" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#doctorSlider"
+                        data-bs-slide="next">
+                        <i class="bi bi-arrow-right gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                    </button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="px-1 py-2" src="./assets/icons/Vector (1).png" alt="">
+                                        </div>
+                                        <h4 class="pt-4">Cardiologist</h4>
+                                        <p class="display-6 text-black-50 pt-2 lh-base fw-semibold"">Heart specialist focusing on cardiovascular health and diseases.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="py-1  px-1" src="./assets/icons/Brain.png" alt="">
+                                        </div>
+                                        <h4 class="pt-4">Neurologist</h4>
+                                        <p class=" display-6 pt-2 text-black-50 lh-base fw-semibold"">Doctor specializing in diagnosing and treating nervous system disorders.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="pt-2" src="./assets/icons/Vector (2).png" alt="">
+                                        </div>
+
+                                        <h4 class="pt-4">ENT Specialist</h4>
+                                        <p class="pt-2 text-black-50 lh-base fw-semibold">Doctor specializing in ear,
+                                            nose, and throat disorders and surgeries.</p>
+                                        <button class="text-primary mt-4 h5 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="px-1 py-2" src="./assets/icons/Vector (1).png" alt="">
+                                        </div>
+                                        <h4 class="pt-4">Pediatrician</h4>
+                                        <p class="display-6 text-black-50 pt-2 lh-base fw-semibold"">Provides healthcare for infants, children, and teenagers. Monitors growth, vaccinations, and overall child.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="py-1  px-1" src="./assets/icons/Brain.png" alt="">
+                                        </div>
+                                        <h4 class="pt-4">Dermatologist</h4>
+                                        <p class=" display-6 pt-2 text-black-50 lh-base fw-semibold"">Treats skin, hair, and nail conditions with modern medical care. Helps maintain healthy and glowing skin.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="pt-2" src="./assets/icons/Vector (2).png" alt="">
+                                        </div>
+
+                                        <h4 class="pt-4">Ophthalmologist</h4>
+                                        <p class="pt-2 text-black-50 lh-base fw-semibold display-6">Diagnoses and treats vision and eye-related diseases.Performs eye surgeries and helps protect long-term vision..</p>
+                                        <button class="text-primary mt-4 h5 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="px-1 py-2" src="./assets/icons/Vector (1).png" alt="heart">
+                                        </div>
+                                        <h4 class="pt-4">Gynecologist</h4>
+                                        <p class="display-6 text-black-50 pt-2 lh-base fw-semibold"">Provides care for women's reproductive health and pregnancy.Offers preventive care and specialized medical treatments.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="py-1  px-1" src="./assets/icons/Brain.png" alt="brain icone">
+                                        </div>
+                                        <h4 class="pt-4">Dentist</h4>
+                                        <p class=" display-6 pt-2 text-black-50 lh-base fw-semibold"">Maintains healthy teeth and gums through preventive care.Treats cavities, gum diseases, and other oral health.</p>
+                                        <button class=" h5 text-primary mt-4 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="px-4 py-5 gray-100 rounded-4">
+                                        <div class="gray-200 card-img-size rounded-circle text-center">
+                                            <img class="pt-2" src="./assets/icons/Vector (2).png" alt="ear icone">
+                                        </div>
+
+                                        <h4 class="pt-4">General Physician</h4>
+                                        <p class="pt-2 text-black-50 lh-base fw-semibold">Diagnoses common illnesses and provides comprehensive medical care.Guides patients toward the right treatment and healthy.</p>
+                                        <button class="text-primary mt-4 h5 border-0">Book Consultation <i
+                                                class="bi bi-arrow-right text-primary"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xl">
+                <div class="row paddi">
+                    <div class="col-lg-6 object-fit-contain pe-4">
+                        <img class="rounded-4 w-100 h-100"
+                            src="./assets/images/pexels-rdne-stock-project-6129499 (1) 1.png" alt="doctor groupe">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center rounded-5 navy-blue">
+                            <img class=" ps-4 py-2 my-1" src="./assets/icons/Star.png" alt="Star icon">
+                            <h5 class="text-primary pt-2 pe-4 ps-3 display-6 fw-medium">Rated #1 for appointments with
+                                many professional doctors</h5>
+                        </div>
+                        <p class="fs-4 fw-normal lh- pt-4 mt-3">We're revolutionizing healthcare with seamless access
+                            to trusted professionals, prioritizing your journey to better health.</p>
+                        <div class="d-flex justify-content-between pt-4 mt-3">
+                            <div>
+                                <h2 class="text-primary">40+ </h2>
+                                <p class="text-black-50">Dedicated Doctors</p>
+                            </div>
+                            <div>
+                                <h2 class="text-primary">10K+</h2>
+                                <p class="text-black-50">Hours of Patient Consultations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xl paddi">
+                <h2 class="text-center">Explore Our App's <i class="text-primary">Features</i></h2>
+                <div class="row g-0 pt-4 mt-3">
+                    <div class="col-lg-8">
+                        <div class="d-lg-flex d-md-flex gray-300 rounded-5">
+                            <div class="py-5 my-3 ps-4 pe-3">
+                                <div class="card-img-size gray-200 text-center rounded-circle">
+                                    <img class="py-2 px-1" src="./assets/icons/Vector (3).png" alt="heart celender">
+                                </div>
+                                <h4 class="pt-4">Convenient Online Booking</h4>
+                                <p class="pt-2 display-6 fw-normal text-black-50 lh-2">Easily schedule consultations and
+                                    meetings with healthcare professionals through our user-friendly online booking
+                                    platform.</p>
+                            </div>
+                            <div class="w-100 h-100 text-lg-end  text-center mt-3 pt-4 pe-4">
+                                <img class="" src="./assets/images/Mobile.png" alt="mobile photo">
+                            </div>
+                        </div>
+                        <div class="d-flex pt-2 pb-5 mb-3 gap-2">
+                            <div class="ps-4 gray-300 rounded-5">
+                                <div class="pt-5 mt-3">
+                                    <div class="gray-200 card-img-size text-center rounded-circle">
+                                        <img class="py-2 px-1" src="./assets/icons/Vector (4).png" alt="document icone">
+                                    </div>
+                                </div>
+                                <h4 class="pt-4">Records Management</h4>
+                                <p class="pt-2 text-black-50 lh-2 display-6 fw-medium ">Effortlessly store and access
+                                    patient medical records, ensuring vital information is available for healthcare
+                                    providers during appointments.</p>
+                            </div>
+                            <div class="ps-4 gray-300 rounded-5">
+                                <div class="pt-5 mt-3">
+                                    <div class="gray-200 card-img-size text-center rounded-circle">
+                                        <img class="px-1 py-2" src="./assets/icons/Vector (5).png"
+                                            alt="seeld protect image">
+                                    </div>
+                                </div>
+                                <h4 class="pt-4">Instant Confirmation</h4>
+                                <div class="pb-5 mb-3">
+                                    <p class="pt-2 display-6 text-black-50 fw-medium lh-2">Receive instant confirmation
+                                        of your booked appointments, along with timely reminders to ensure you never
+                                        miss a meeting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ps-2">
+                        <div class="gray-300 py-3 rounded-5">
+                            <div class=" px-4">
+                                <div class="pt-5 mt-3">
+                                    <div class="gray-200 card-img-size text-center rounded-circle pt-1">
+                                        <img class="px-3 pt-2 " src="./assets/icons/Vector (6).png" alt="vector icon">
+                                    </div>
+                                </div>
+                                <h4 class="pt-4 text-nowrap">Secure Virtual Meetings</h4>
+                                <p class="pt-2 display-6 fw-medium text-black-50 lh-2 ">Experience secure and convenient
+                                    virtual consultations from home. Our encrypted video conferencing guarantees
+                                    confidential interactions, removing the need for in-person visits.</p>
+                            </div>
+                            <div class="pt-4">
+                                <div class="w-100 h-100 text-end px-5 pt-5 mt-3">
+                                    <img class="w-100" src="./assets/images/iPhone 13 Pro (3) 1.png" alt="iphone photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xl paddi">
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <h2>Testimonials From Our <i class="text-primary">Satisfied</i> Patients</h2>
+                    </div>
+                </div>
+                <div id="doctorSlider02" class="carousel">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#doctorSlider02"
+                        data-bs-slide="prev">
+                        <i class="bi bi-arrow-left gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                    </button>
+                    <!-- Dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#doctorSlider02" data-bs-slide-to="0"
+                            class="active"></button>
+
+                        <button type="button" data-bs-target="#doctorSlider02" data-bs-slide-to="1"></button>
+
+                        <button type="button" data-bs-target="#doctorSlider02" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#doctorSlider02"
+                        data-bs-slide="next">
+                        <i class="bi bi-arrow-right gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                    </button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <div class="d-lg-flex ">
+                                        <div class=" bg-primary rounded-5 me-2 border border-black">]
+                                            <img src="./assets/images/unsplash_KIPqvvTOC1s.png"
+                                                alt="David Panjaitan photo">
+                                        </div>
+                                        <div class="px-4 pt-4 gray-300 rounded-5">
+                                            <p class="display-5 text-black lh-base fw-medium pt-3">"I've been using this
+                                                site for a few months, and it's incredibly reliable. I appreciate the
+                                                convenience of booking and canceling appointments anytime, anywhere”</p>
+                                            <p class="text-primary display-5 pt-4">David Panjaitan</p>
+                                            <p class="display-6">Software Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-lg-12">
+                                    <div class="d-lg-flex">
+                                        <div class="bg-primary rounded-5 me-2">
+                                            <img class=" "
+                                                src="./assets/images/unsplash_IF9TK5Uy-KI.png"
+                                                alt="David Panjaitan photo">
+                                        </div>
+                                        <div class="px-4 pt-4 gray-300 rounded-5">
+                                            <p class="display-5 text-black lh-base fw-medium pt-3">"Managing
+                                                appointments for my entire family used to be chaotic. This site makes it
+                                                so much easier to keep track of everyone’s schedules in one place."</p>
+                                            <p class="text-primary display-5 pt-4">Ester Howard</p>
+                                            <p class="display-6">Project Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item py-4 my-3">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="d-lg-flex">
+                                        <div class=" me-2 w-75 rounded-5 bg-primary">
+                                            <img class=" object-fit-cover w-100 h-100"
+                                                src="./assets/images/professional-female-doctor-png-healthcar-pnglove.com.png"
+                                                alt="David Panjaitan photo">
+                                        </div>
+                                        <div class="px-4 pt-4 gray-300 rounded-5">
+                                            <p class="display-5 text-black lh-base fw-medium pt-3">Dr. Sarah Johnson is
+                                                an experienced cardiologist specializing in heart health and
+                                                cardiovascular diseases. She is dedicated to providing personalized
+                                                treatment and preventive care.</p>
+                                            <p class="text-primary display-5 pt-4">Dr. Sarah Johnson</p>
+                                            <p class="display-6">Cardiologist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-xl paddi">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-between">
+                        <div>
+                            <h2>Expert <i class="text-primary">Health</i>Advice and Updates</h2>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <a class="text-primary display-5 fw-medium" href="#">See all</a>
+                        </div>
+                    </div>
+                    <div id="doctorSlider03" class="carousel slide">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#doctorSlider03"
+                            data-bs-slide="prev">
+                            <i class="bi bi-arrow-left gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                        </button>
+                        <!-- Dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#doctorSlider03" data-bs-slide-to="0"
+                                class="active"></button>
+
+                            <button type="button" data-bs-target="#doctorSlider03" data-bs-slide-to="1"></button>
+
+                            <button type="button" data-bs-target="#doctorSlider03" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#doctorSlider03"
+                            data-bs-slide="next">
+                            <i class="bi bi-arrow-right gray-200 px-2 py-1 rounded-circle custom-lightleft"></i>
+                        </button>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active py-4 my-3">
+                                <div class="row g-3">
+                                    <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/unsplash__Zn_7FzoL1w.png" alt="food image">
+                                        <div class="d-flex pt-3">
+                                            <p class="text-primary pe-3 fw-medium display-6">Diet Tips </p>
+                                            <p class="fw-medium display-6">28 April 2024</p>
+                                        </div>
+                                        <p class="display-5 fw-medium pt-3">Diet Tips for a Healthier Lifestyle</p>
+
+                                        <p class="fw-normal display-6 pt-2 lh-lg text-black-50">Maintaining a healthy
+                                            diet is crucial for
+                                            overall well-being and can prevent numerous health.</p>
+
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class=" object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/unsplash_6Xiy0TQkIew.png" alt="consultationsc patient">
+                                        <div class="d-flex pt-3">
+                                            <p class="text-primary display-6 fw-medium pe-3">Health Tips</p>
+                                            <p class="display-6 fw-medium">21 April 2024</p>
+                                        </div>
+                                        <p class="display-5 fw-medium pt-3 text-nowrap">The Importance of Regular
+                                            Health...</p>
+                                        <p class="display-6 fw-normal text-black-50 lh-lg pt-2">Regular health screenings are
+                                            essential for early detection and prevention of various health.</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/unsplash_mod2s3-qFOc.png" alt="tree leef">
+                                        <div class="pt-3 d-flex">
+                                            <p class="text-primary display-6 fw-medium pe-3">Health Tips</p>
+                                            <p class="display-6 fw-medium">14 April 2024</p>
+                                        </div>
+                                        <p class="display-5 text-nowrap fw-medium pt-3">Boosting Your Immune System
+                                            Natu...</p>
+                                        <p class="display-6 fw-normal pt-2 lh-lg text-black-50">A strong immune system
+                                            is vital for fighting
+                                            off
+                                            infections and staying healthy. This article pro...</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item py-4 my-3">
+                                <div class="row g-3">
+                                    <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/nappy-dcBO4nt4MRE-unsplash.jpg"
+                                            alt="consultations coctors">
+                                        <div class="d-flex pt-3 ">
+                                            <p class="text-primary display-6 fw-medium pe-3">Health Tips</p>
+                                            <p class="display-6 fw-medium">16 April 2024</p>
+                                        </div>
+                                        <p class="display-5 pt-3 fw-medium">Expert Medical Consultation</p>
+                                        <p class="display-6 pt-2 fw-normal lh-lg text-black-50">Get personalized healthcare
+                                            advice from experienced doctors for better treatment.</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/ali-hajiluyi-MhFJNz_D8t4-unsplash.jpg"
+                                            alt="heart health image">
+                                        <div class="d-flex pt-3">
+                                            <p class="text-primary display-6 fw-medium pe-3">heart Tips</p>
+                                            <p class="display-6 fw-medium">20 April 2024</p>
+                                        </div>
+                                        <p class="display-5 fw-medium pt-3">Healthy Heart, Healthy Life</p>
+                                        <p class="display-6 fw-normal pt-2 text-black-50 lh-lg">Regular heart checkups and
+                                            an active lifestyle help reduce the risk of cardiovascular diseases.</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+    
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/dylan-gillis-YJdCZba0TYE-unsplash.jpg" alt="food image">
+                                        <div class="d-flex pt-3">
+                                            <p class="text-primary pe-3 fw-medium display-6 pe-3">Yoga Tips </p>
+                                            <p class="fw-medium display-6">23 April 2024</p>
+                                        </div>
+                                        <p class="display-5 fw-medium pt-3">Stay Active Every Day</p>
+    
+                                        <p class="fw-normal display-6 pt-2 lh-lg text-black-50">MDaily exercise and yoga
+                                            improve flexibility, reduce stress, and keep your body fit.</p>
+    
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item py-4 my-3">
+                                <div class="row g-3">
+                                     <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/julia-taubitz-vN5s_G5SPkY-unsplash.jpg"
+                                            alt="consultations coctors">
+                                        <div class="d-flex pt-3 ">
+                                            <p class="text-primary display-6 fw-medium pe-3">Health Tips</p>
+                                            <p class="display-6 fw-medium">26 April 2024</p>
+                                        </div>
+                                        <p class="display-5 pt-3 fw-medium">Monitor Your Health</p>
+                                        <p class="display-6 pt-2 fw-normal lh-lg text-black-50">Routine blood pressure monitoring helps detect health issues early and supports better care..</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/yassine-khalfalli-e8nk93hHgfg-unsplash.jpg"
+                                            alt="heart health image">
+                                        <div class="d-flex pt-3">
+                                            <p class="text-primary display-6 fw-medium pe-3">Emergency Tips</p>
+                                            <p class="display-6 fw-medium">8 octuber 2024</p>
+                                        </div>
+                                        <p class="display-5 fw-medium pt-3">24/7 Emergency Support</p>
+                                        <p class="display-6 fw-normal pt-2 text-black-50 lh-lg">Our emergency team is always ready to provide immediate medical attention whenever needed..</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+    
+                                    </div>
+                                     <div class="col-lg-4">
+                                        <img class="object-fit-cover w-100 rounded-4"
+                                            src="./assets/images/national-cancer-institute-XknuBmnjbKg-unsplash.jpg"
+                                            alt="consultations coctors">
+                                        <div class="d-flex pt-3 ">
+                                            <p class="text-primary display-6 fw-medium pe-3">Health Tips</p>
+                                            <p class="display-6 fw-medium">16 April 2024</p>
+                                        </div>
+                                        <p class="display-5 pt-3 fw-medium">Accurate Diagnostic Tests</p>
+                                        <p class="display-6 pt-2 fw-normal lh-lg text-black-50">Advanced laboratory testing provides reliable results for faster and more effective treatment.</p>
+                                        <button type="button" class="btn btn-outline-primary h5 pe-2 border-0">Read More
+                                            <i class="bi bi-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="col-12 position-relative ">
+                    <div class="banner ">
+                        <div class="banner-content d-flex flex-column justify-content-center align-items-center">
+                            <h1 class="w-75 text-center text-white ">Start Your Health Journey Here</h1>
+                            <div class="gap-4 pt-5 text-center">
+                                <button type="button" class="btn btn-outline-primary py-3 px-5 rounded-5 me-4 h5">Book
+                                    Consultation Now</button>
+                                <button type="button" class="btn btn-outline-primary py-3 px-5 rounded-5 h5">Learn More
+                                    <i class="bi bi-arrow-right ps-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-black">
+        <div class="container-xl">
+            <div class="row ">
+                <div class="col-lg-4 my-5 py-5">
+                    <div class="d-flex">
+                        <img class="pe-3 fw-semibold" src="./assets/icons/Stethoscope.png" alt="Doctor Stethoscope">
+                        <h4 class="display-5 fw-semibold text-primary">MedEase</h4>
+                    </div>
+                    <p class="text-white-50 pt-4">MedEase simplifies healthcare with an easy-to-use platform for booking
+                        appointments, telehealth services, and managing patient records.</p>
+                    <div class="w-50 mt-4 pt-3">
+                        <img class="pe-4" src="./assets/icons/fb.png" alt="">
+                        <img class="pe-4" src="./assets/icons/ig.png" alt="">
+                        <img src="./assets/icons/twt.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex justify-content-end align-items-center py-5 pb-5">
+                    <div class="pe-5 me-4">
+                        <div class="mb-2 text-white fw-medium h5">Services</div>
+                        <nav class="d-flex flex-column gap-3 custom-font-links pt-4">
+                            <a href="#" class="text-white-50">Primary Care</a>
+                            <a href="#" class="text-white-50">Specialist Care</a>
+                            <a href="#" class="text-white-50">Mental Health Services</a>
+                            <a href="#" class="text-white-50">Telehealth</a>
+                        </nav>
+                    </div>
+                    <div class="pe-5 me-4">
+                        <div class="mb-2 text-white fw-medium h5">Find a Doctor</div>
+                        <nav class="d-flex flex-column gap-3 custom-font-links pt-4">
+                            <a href="#" class="text-white-50">Top-Rated Doctors</a>
+                            <a href="#" class="text-white-50">Appointment Scheduling</a>
+                            <a href="#" class="text-white-50">Patient Reviews</a>
+                            <a href="#" class="text-white-50">Doctor Profiles</a>
+                        </nav>
+                    </div>
+                    <div class="">
+                        <div class="mb-2 text-white fw-medium h5">About Us</div>
+                        <nav class="d-flex flex-column gap-3 custom-font-links pt-4">
+                            <a href="#" class="text-white-50">News and Updates</a>
+                            <a href="#" class="text-white-50">Careers</a>
+                            <a href="#" class="text-white-50">Community Involvement</a>
+                            <a href="#" class="text-white-50">Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
