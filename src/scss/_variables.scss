@@ -30,6 +30,17 @@ $secondary:     #F2F7FF !important;
 }
 
 
+@media  (max-width:992px) {
+
+    .photo-size{
+        width: 318px;
+        height: 368px;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+}
+
 
 /*********** Heading size *********/
 
@@ -112,6 +123,20 @@ $link-decoration:                         none;
   background-color: #0d6efd;
   color: white;
 }
+
+.custom-light{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-color: white;
+    border-style: none;
+}
+
+.custom-light:hover{
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+}
+
 
 
 /************ carousal control   **********/
